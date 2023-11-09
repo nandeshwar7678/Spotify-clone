@@ -1,0 +1,243 @@
+body{
+    font-family: 'montserrat',sans-serif;
+    background-color: #000;
+    color:#fff;
+    margin:0;
+    overflow:hidden;
+}
+.main{
+    display: flex;
+    height:100vh;
+    padding:0.5rem;
+}
+.sidebar{
+    background-color: 000;
+    width:340px;
+    border-radius: 1rem;   /*16px */
+    margin-right: 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding:0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom:0px;
+    height:72px;
+    width: 100%;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1 rem;
+    justify-content:center;
+    height:100px;
+    padding:0.5rem 0.75rem;
+    
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity:0.5;
+    padding:0.5rem 0.75rem;
+
+}
+.nav-option i{
+    font-size:1.5rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option a{
+    font-size:1rem;
+    margin-left:1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top:0.5rem;
+    padding:0.5rem 0.75rem;
+}
+.option{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-options img{
+ height:1.25rem;
+ width:1.25rem;
+}
+.icon{
+    font-size: 1.25rem;
+   display: flex;
+}
+.icon i{
+    opacity: 0.7;
+    margin-right: 1rem;
+} 
+.icon i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #121212;
+    border-radius: 0.75rem;
+    height:8rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding:0.75rem 1rem;
+}
+.box-p1{
+    font-weight:600;
+    font-size:1rem;
+}
+.box-p2{
+    opacity: 0.8;
+    font-size: 0.85rem;
+}
+.badge{
+    background-color: #fff;
+    border:none;
+    font-weight: 700;
+    border-radius: 100px;
+    margin:0.25rem 1 rem;
+    margin-top:0.5rem;
+    height:2rem;
+    width:fit-content;
+}
+.sticky-nav{
+    position:sticky;
+    top: 0;
+    display: flex;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons{
+    margin-left:0.75rem;
+}
+.sticky-nav-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+@media (max-width:1000px){
+.hide{
+    display:none;
+}
+}
+.card{
+    background-color: #121212;
+    width:150px;
+    border-radius:0.5rem;
+    padding:1 rem;
+    margin-left:1.5rem;
+}
+.cards-container{
+    display:flex;
+}
+.card-img{
+    width:100%;
+    border-radius:0.2rem;
+
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.75rem;
+}
+.footer{
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.line{
+    width:90%;
+    height:50%;
+    border-top:1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width:25%;
+}
+.player{
+    width:40%;
+}
+.control{
+    width:10%;
+}
+.player-control{
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+}
+.player-control-icon{
+    height:1rem;
+    margin-right:2rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor:pointer;  
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius:1rem;
+    height:0.30rem;
+}
+.progress-bar::-webkit-slider-thumb{
+   appearance: none;
+   height: 1rem;
+   width:1rem;
+   background-color: #0d5d;
+   border-radius: 50%;
+   margin-top: -6px;
+}
+.album{
+    height:4rem;
+    width:4rem;
+    display: flex;
+    margin-right: 1rem;
+}
+.album i{
+    margin:40px;
+    margin-top: 19px;
+    margin-left: 0.5rem;
+}
+.album h3{
+    margin-left:2rem;
+}
+.album img{
+    border-radius: 0.5rem;
+    margin-right:1rem;
+}
